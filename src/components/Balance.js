@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 
 const Balance = () => {
-  const [balance, setBalance] = useState(0.0);
+  const [balance, setBalance] = useState(0e-2);
 
   return (
     <div className="balance">
