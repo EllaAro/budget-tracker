@@ -6,7 +6,7 @@ const TransactionActions = () => {
     <React.Fragment>
       <TransactionAction placeHolder="Add Income" transactionAction="income" />
       <TransactionAction
-        placeHolder="Add Expenses"
+        placeHolder="Add Expense"
         transactionAction="expense"
       />
     </React.Fragment>
