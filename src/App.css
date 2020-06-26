@@ -64,23 +64,23 @@ body {
   margin-bottom: 10px;
   border: none;
   background: transparent;
-  border-bottom: 0.2rem solid #777;
+  border-bottom: 2px solid #777;
   font-size: 15px;
   outline: none;
   transition: border-bottom 0.4s;
 }
 
 .income input:not([type="submit"]):focus {
-  border-bottom: 2px solid #77c987;
+  border-bottom: solid #77c987;
 }
 
 .expense input:not([type="submit"]):focus {
-  border-bottom: 2px solid #ff716e;
+  border-bottom: solid #ff716e;
 }
 
 .input-actions input[type="submit"] {
-  width: 10rem;
-  padding: 0.7rem;
+  width: 150px;
+  padding: 12px;
   border: none;
   outline: none;
   border-radius: 5px;
@@ -91,5 +91,5 @@ body {
 }
 
 .input-actions input[type="submit"]:active {
-  transform: translateY(5px);
+  transform: translateY(2px);
 }
