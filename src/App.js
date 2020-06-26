@@ -2,6 +2,7 @@ import React from "react";
 import "./App.css";
 import Header from "./components/Header";
 import Balance from "./components/Balance";
+import TransactionActions from "./components/TransactionActions";
 
 const App = () => {
   return (
@@ -9,6 +10,7 @@ const App = () => {
       <div className="wrapper">
         <Header />
         <Balance />
+        <TransactionActions />
       </div>
     </div>
   );
