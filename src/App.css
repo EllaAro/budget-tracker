@@ -21,7 +21,7 @@ body {
 }
 
 .wrapper {
-  background-color: rgb(236, 234, 234);
+  background-color: white;
   width: 65%;
   height: 500px;
   display: grid;
@@ -49,7 +49,6 @@ body {
 }
 
 .balance {
-  color: #ca5023;
   font-size: 15px;
   text-transform: uppercase;
 }
@@ -76,26 +75,27 @@ body {
   transition: border-bottom 0.4s;
 }
 
-.income input:not([type="submit"]):focus {
-  border-bottom: solid #77c987;
-}
-
-.expense input:not([type="submit"]):focus {
-  border-bottom: solid #ff716e;
-}
-
-.input-actions input[type="submit"] {
-  width: 150px;
-  padding: 12px;
-  border: none;
-  outline: none;
-  border-radius: 5px;
-  letter-spacing: 2px;
-  color: rgb(238, 59, 27);
+.submit-btn {
+  box-shadow: inset 0px 1px 0px 0px #97c4fe;
+  background: linear-gradient(to bottom, #3d94f6 5%, #1e62d0 100%);
+  background-color: #3d94f6;
+  border-radius: 6px;
+  border: 1px solid #337fed;
+  display: inline-block;
   cursor: pointer;
-  margin-top: 5px;
+  color: #ffffff;
+  font-family: Arial;
+  font-size: 15px;
+  font-weight: bold;
+  padding: 6px 24px;
+  text-decoration: none;
+  text-shadow: 0px 1px 0px #1570cd;
 }
-
-.input-actions input[type="submit"]:active {
-  transform: translateY(2px);
+.submit-btn:hover {
+  background: linear-gradient(to bottom, #1e62d0 5%, #3d94f6 100%);
+  background-color: #1e62d0;
+}
+.submit-btn:active {
+  position: relative;
+  top: 1px;
 }
