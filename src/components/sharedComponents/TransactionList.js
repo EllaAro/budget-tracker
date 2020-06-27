@@ -1,19 +1,20 @@
-// import React from "react";
+import React from "react";
 
-// const TransactionList = () => {
-//     return (
-//         <div className="transactions transactions-expense">
-//           <h2>Transaction History</h2>
-//           <ul className="transaction-list">
-//             {expenseTransactions.map(expenseTransaction => (
-//               <ExpenseTransaction
-//                 key={expenseTransaction.id}
-//                 expenseTransaction={expenseTransaction}
-//               />
-//             ))}
-//           </ul>
-//         </div>
-//       );
-// };
+const TransactionList = ({ transactionAction }) => {
+  return (
+    <div>
+      <h2>{`${transactionAction} History`}</h2>
+      <ul>
+        <li>
+          <span>Salary</span>
+          <span>$5000</span>
+          <button className="delete-btn">
+            <i className="fas fa-trash"></i>
+          </button>
+        </li>
+      </ul>
+    </div>
+  );
+};
 
-// export default TransactionList;
+export default TransactionList;
