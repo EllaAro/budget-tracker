@@ -31,7 +31,7 @@ const ExpenseActions = () => {
 
       setExpense({
         expenseText: "",
-        expenseAmount: 0,
+        expenseAmount: "",
       });
     }
   };

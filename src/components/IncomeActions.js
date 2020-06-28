@@ -31,7 +31,7 @@ const IncomeActions = () => {
 
       setIncome({
         incomeText: "",
-        incomeAmount: 0,
+        incomeAmount: "",
       });
     }
   };
