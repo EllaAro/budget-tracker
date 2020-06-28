@@ -1,7 +1,17 @@
-import { ADD_INCOME, ADD_EXPENSE, DELETE_TRANSACTION } from "./types";
+import {
+  ADD_INCOME,
+  ADD_EXPENSE,
+  DELETE_INCOME,
+  DELETE_EXPENSE,
+} from "./types";
 
-export const deleteTransaction = (id) => ({
-  type: DELETE_TRANSACTION,
+export const deleteIncome = (id) => ({
+  type: DELETE_INCOME,
+  payload: id,
+});
+
+export const deleteExpense = (id) => ({
+  type: DELETE_EXPENSE,
   payload: id,
 });
 

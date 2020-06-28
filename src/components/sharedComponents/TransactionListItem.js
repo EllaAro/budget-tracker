@@ -1,10 +1,10 @@
 import React from "react";
 
-const TransactionListItem = () => {
+const TransactionListItem = ({ type, amount }) => {
   return (
     <li>
-      <span>Salary</span>
-      <span>$5000</span>
+      <span>{type}</span>
+      <span>${amount}</span>
       <button className="delete-btn">
         <i className="fas fa-trash"></i>
       </button>

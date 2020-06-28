@@ -4,7 +4,12 @@ import TransactionList from "./sharedComponents/TransactionList";
 
 const IncomeList = () => {
   const { incomeTransactions } = useSelector((state) => state);
-  return <TransactionList transactionAction="Income" />;
+  return (
+    <TransactionList
+      transactionActionType="Income"
+      transactions={incomeTransactions}
+    />
+  );
 };
 
 export default IncomeList;
