@@ -1,6 +1,6 @@
 import React from "react";
 
-const TransactionListItem = ({ type, amount }) => {
+const TransactionListItem = ({ id, type, amount }) => {
   return (
     <li>
       <span>{type}</span>

@@ -8,7 +8,7 @@ const ExpenseActions = () => {
   const dispatch = useDispatch();
   const [expense, setExpense] = useState({
     expenseText: "",
-    expenseAmount: 0,
+    expenseAmount: "",
   });
 
   const { expenseText, expenseAmount } = expense;

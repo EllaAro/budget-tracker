@@ -1,14 +1,10 @@
 import React from "react";
-import TransactionListItem from "./TransactionListItem";
 
-const TransactionList = ({ transactionActionType, transactions }) => {
-  // const transactionList = transactions.map((transaction) => (
-  //   <TransactionListItem type="" amount="" />
-  // ));
+const TransactionList = ({ transactionActionType, transactionList }) => {
   return (
     <div>
       <h2>{`${transactionActionType} History`}</h2>
-      <ul>{}</ul>
+      <ul>{transactionList}</ul>
     </div>
   );
 };

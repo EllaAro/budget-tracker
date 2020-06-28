@@ -6,7 +6,7 @@ import {
 } from "./types";
 
 const initialState = {
-  budget: 0,
+  balance: 0,
   incomeTransactions: [],
   expenseTransactions: [],
 };
@@ -16,20 +16,20 @@ export function budgetTrackerReducer(state = initialState, action) {
     case ADD_INCOME:
       return {
         ...state,
-        budget: state.budget + action.payload.incomeAmount,
+        balance: state.balance + action.payload.incomeAmount,
         incomeTransactions: [action.payload, ...state.incomeTransactions],
       };
     case ADD_EXPENSE:
       return {
         ...state,
-        budget: state.budget - action.payload.expenseAmount,
+        balance: state.balance - action.payload.expenseAmount,
         expenseTransactions: [action.payload, ...state.expenseTransactions],
       };
     case DELETE_INCOME:
       return {
         ...state,
-        budget:
-          state.budget -
+        balance:
+          state.balance -
           state.incomeTransactions.filter(
             (incomeTransaction) => incomeTransaction.id === action.payload
           )[0].incomeAmount,
@@ -40,8 +40,8 @@ export function budgetTrackerReducer(state = initialState, action) {
     case DELETE_EXPENSE:
       return {
         ...state,
-        budget:
-          state.budget +
+        balance:
+          state.balance +
           state.expenseTransactions.filter(
             (expenseTransaction) => expenseTransaction.id === action.payload
           )[0].expenseAmount,
