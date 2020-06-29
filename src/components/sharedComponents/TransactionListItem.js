@@ -5,9 +5,8 @@ const TransactionListItem = ({ id, type, amount, deleteFunction }) => {
   const dispatch = useDispatch();
 
   return (
-    <li>
-      <span>{type}</span>
-      <span>${amount}</span>
+    <li className="transaction">
+      <span>{`${type}, the amount is: $${amount}`}</span>
       <button
         className="delete-btn"
         onClick={() => dispatch(deleteFunction(id))}
