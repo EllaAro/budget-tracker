@@ -13,6 +13,10 @@ const TransactionAction = ({
   const disableSubmitBtn =
     textValue.replace(/\s/g, "").length === 0 || amoutValue.length === 0;
 
+  const submitOnEnter = (e) => {
+    if (e.key === "Enter") this.handleNext();
+  };
+
   return (
     <form onSubmit={onSubmitTransaction}>
       <div className={`input-actions ${transactionActionType}`}>
@@ -37,6 +41,7 @@ const TransactionAction = ({
           className={`submit-btn ${disableSubmitBtn ? "disabled" : ""}`}
           value="Submit"
           disabled={disableSubmitBtn}
+          onKeyPress={submitOnEnter}
         />
       </div>
     </form>

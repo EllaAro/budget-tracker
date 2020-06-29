@@ -15,7 +15,6 @@ body {
   min-width: 360px;
   width: 100%;
   min-height: 100vh;
-  /* height: 578px; */
   background: linear-gradient(110deg, #2c48e7 60%, #4d60ce 60%);
 }
 
@@ -139,18 +138,16 @@ input[type="number"] {
   transform: translateX(4rem);
   border: none;
   background-color: transparent;
-  font-size: 25px;
+  font-size: 20px;
   margin: 0 1rem;
-  color: #23218f;
-  text-shadow: 0 0.2rem 0.5rem rgba(0, 0, 0, 0.4);
   cursor: pointer;
   outline: none;
 }
 
 .transactions {
   margin: 0 auto;
-  width: 350px;
-  height: 100px;
+  max-width: 300px;
+  max-height: 100px;
   overflow: auto;
 }
 
@@ -160,7 +157,7 @@ input[type="number"] {
 }
 
 .transaction-list li {
-  padding-left: 20px;
+  padding-left: 15px;
 }
 
 @media screen and (max-width: 500px) {
