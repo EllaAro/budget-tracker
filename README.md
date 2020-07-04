@@ -5,7 +5,7 @@
 ## Technology Wise
 This mini-project was created purely on client-site, using `React`. 
 Each of the components are purely functional components (usage of React hooks).
-For maintaining state between pages/components `React Redux` is used.
+For maintaining state between components `React Redux` is used.
 ### React Components Relation Diagram
 ![Untitled Diagram](https://user-images.githubusercontent.com/64191302/86010653-5ec85e00-ba24-11ea-9bcd-2ddfb45e865e.png)
 ## Deployed App
