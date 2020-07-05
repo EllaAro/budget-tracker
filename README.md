@@ -23,12 +23,12 @@ Packages :
 ```
 npm install npm@latest -g
 
-npm install react --save
+npm install --save react
 
-npm install react-dom --save
+npm install --save react-dom
 
-npm install react-redux --save
+npm install --save react-redux
 
-npm install redux --save
+npm install --save redux
 
 ```
