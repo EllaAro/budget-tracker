@@ -9,7 +9,7 @@ For maintaining state between components `React Redux` is used.
 ### React Components Relation Diagram
 ![Untitled Diagram](https://user-images.githubusercontent.com/64191302/86010653-5ec85e00-ba24-11ea-9bcd-2ddfb45e865e.png)
 ## Deployed App
-Please visit the next link in order to see the app in production deployed over firebase : https://my-budget-tracker-app.web.app/
+Please visit the next link in order to see the app in production deployed over `firebase` : https://my-budget-tracker-app.web.app/
 ## Local Setting
 ### Getting Started
 These instructions will get you a copy of the project up and running on your local machine for development and testing purposes.
