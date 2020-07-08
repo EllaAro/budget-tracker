@@ -10,6 +10,7 @@ const IncomeList = () => {
   const incomeList = incomeTransactions
     ? incomeTransactions.map((transaction) => (
         <TransactionListItem
+          key={transaction.id}
           id={transaction.id}
           type={transaction.incomeText}
           amount={transaction.incomeAmount}
